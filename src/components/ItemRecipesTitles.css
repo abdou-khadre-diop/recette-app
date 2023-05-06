@@ -1,0 +1,42 @@
+.monstyle {
+	margin-top: 70px;
+	margin-left: 60px;
+	padding: 30px;
+	width: 250px;
+	background: rgb(229, 232, 229);
+	height: 400px;
+}
+#title {
+	color: black;
+	font-size: 38px;
+	font-weight: bold;
+	font-family: "Helvetica Neue", "Helvetica";
+}
+#subtitle {
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "Helvetica Neue", "Helvetica";
+}
+.recetteName,
+.recetteUser {
+	color: black;
+	font-size: 18px;
+}
+.recetteUser {
+	color: black;
+	font-size: 15px;
+}
+#brkfast {
+	padding-top: 6em;
+	padding-bottom: 6em;
+}
+.itemDiv-h2,
+.itemDiv-p {
+	padding-left: 25px;
+	padding-top: 15px;
+	color: black;
+}
+.itemDiv-h2 {
+	font-size: 24px;
+}
