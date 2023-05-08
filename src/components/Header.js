@@ -1,13 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 import  './ItemRecipesTitles.css'
 import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
-function Header() {
+function Header() { //setBurgerStatus
+  const [burgerStatus,setBurgerStatus ] = useState(false)
   return (
     <Container> 
       <a>
-         <img src="/images/crown.svg" alt="" /> 
+         <img src="/images/crown.png" alt="" /> 
       </a>
       <Menu>
         <a href="#" >Home</a>
@@ -18,9 +20,12 @@ function Header() {
       <RightMenu>
         <a href="#">Shop</a>
         <a href="#">Login</a>
-        <CustomMenu />
+        <CustomMenu onClick={()=> setBurgerStatus(true)}/>
       </RightMenu>
-      <BurgerNav>
+      <BurgerNav show={burgerStatus}>
+        <CloseWrapper>
+          <CustomClose onClick={()=> setBurgerStatus(false)} />
+        </CloseWrapper>
         <li><a href="#">Hello</a></li>
         <li><a href="#">Hello</a></li>
         <li><a href="#">Hello</a></li>
@@ -33,7 +38,7 @@ function Header() {
 export default Header 
 
 const Container = styled.div`
-  min-height: 600px; 
+  min-height: 60px; 
   position: fixed;
   display: flex;
   align-items: center;
@@ -83,4 +88,30 @@ const BurgerNav = styled.div`
   background: white;
   width: 300px;
   z-index: 16;
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: flex-start;
+  transform: ${props => props.show ?'translateX(0)' : 'translateX(100%)'};
+  transition: transform 0.2s;
+  li {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+
+    a {
+      font-weight: 600;
+      color: black;
+    }
+  }
+`
+
+const CustomClose = styled(CloseIcon)`
+  cursor: pointer;
+`
+const CloseWrapper = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  
 `

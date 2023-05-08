@@ -7,8 +7,8 @@ function SectionBreakfast() {
     <Wrap>
         <div id="brkfast">
             <ItemDiv>
-                <h2 class="itemDiv-h2">50+ Breakfast Recipes That <br/>Very Quick And Easy</h2>
-                <p class="itemDiv-p">Find the perfect food ideas to start your day with.</p>
+                <h2 className="itemDiv-h2">50+ Breakfast Recipes That <br/>Very Quick And Easy</h2>
+                <p className="itemDiv-p">Find the perfect food ideas to start your day with.</p>
             </ItemDiv>
         </div>
         

@@ -12,10 +12,10 @@ function ItemRecipes({nomRecette, createurRecette, backgroundImg}) {
         </div>
         <div>
             <RecetteName>
-                <h3 class="recetteName">{nomRecette}</h3>
+                <h3 className="recetteName">{ nomRecette }</h3>
             </RecetteName>
             <RecetteUser>
-                <h4 class="recetteUser">by {createurRecette}</h4>
+                <h4 className="recetteUser">by { createurRecette }</h4>
             </RecetteUser>
         </div>
         
