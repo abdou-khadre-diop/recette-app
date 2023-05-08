@@ -33,7 +33,7 @@ function Header() {
 export default Header 
 
 const Container = styled.div`
-  min-height: 60px; 
+  min-height: 600px; 
   position: fixed;
   display: flex;
   align-items: center;
@@ -43,7 +43,7 @@ const Container = styled.div`
   top: 0; 
   left: 0;
   right: 0;
-
+  z-index: 1;
  
 `
 const Menu = styled.div`
@@ -76,4 +76,11 @@ const CustomMenu = styled(MenuIcon)`
 
 `
 const BurgerNav = styled.div`
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: white;
+  width: 300px;
+  z-index: 16;
 `
