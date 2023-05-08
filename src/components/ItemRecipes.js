@@ -32,7 +32,8 @@ const Wrap = styled.div`
     height: 52vh;
     background: rgb(247,247,247);
     margin-top: 10vh;
-    margin-left: 10vh;
+    margin-left: 8vh;
+    
     border-radius: 15px;
     
 `

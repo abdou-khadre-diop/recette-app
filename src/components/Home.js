@@ -4,6 +4,7 @@ import Section from './Section'
 import SectionBreakfast from './SectionBreakfast'
 import SeeAll from './SeeAll'
 
+
 function Home() {
   return (
     <Container>
