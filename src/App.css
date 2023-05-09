@@ -9,10 +9,7 @@ body{
    width: 100%;
    overflow-x: hidden;
 }
-#subtitle{
-  font-size: 18px;
-  font-family: 'Times New Roman', Times, serif;
-}
+
 
 @keyframes animatedArrow {
   0%, 20%, 50%,80%, 100%{

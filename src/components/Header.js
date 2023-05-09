@@ -26,9 +26,9 @@ function Header() { //setBurgerStatus
         <CloseWrapper>
           <CustomClose onClick={()=> setBurgerStatus(false)} />
         </CloseWrapper>
-        <li><a href="#">Hello</a></li>
-        <li><a href="#">Hello</a></li>
-        <li><a href="#">Hello</a></li>
+          <li><a href="#">Hello</a></li>
+          <li><a href="#">Hello</a></li>
+          <li><a href="#">Hello</a></li>
       </BurgerNav>
     </Container>
     
@@ -69,10 +69,11 @@ const Menu = styled.div`
 const RightMenu = styled.div`
   display: flex;
   align-items: center;
+  
   a {
     font-weight: 600;
     text-decoration: uppercase;
-    margin-right: 0 10px;
+    margin-right: 15px;
     flex-wrap: nowrap;
   }
 `
@@ -110,7 +111,7 @@ const BurgerNav = styled.div`
 
 const CustomClose = styled(CloseIcon)`
   cursor: pointer;
-  color: black;
+  
 `
 const CloseWrapper = styled.div`
   display: flex;

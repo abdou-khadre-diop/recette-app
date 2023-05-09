@@ -4,7 +4,7 @@ import './ItemRecipesTitles.css'
 
 function ItemRecipes({nomRecette, createurRecette, backgroundImg}) {
   return (
-    <Wrap>
+    <Recette>
         <div>
             <ItemRecette bgImage={backgroundImg} >
                 
@@ -19,24 +19,32 @@ function ItemRecipes({nomRecette, createurRecette, backgroundImg}) {
             </RecetteUser>
         </div>
         
-    </Wrap>
+    </Recette>
     
     
   )
 }
 
 export default ItemRecipes
-
-const Wrap = styled.div`
+//rgb(247,247,247)
+const Recette = styled.div`
     width: 20vw;
     height: 52vh;
-    background: rgb(247,247,247);
+    background: Orange;
     margin-top: 10vh;
     margin-left: 8vh;
     
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+
+    @media(max-width: 768px){
+        width: 80vw;
+        height: 30vh;
+        margin-top: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
     
     
     
@@ -51,6 +59,7 @@ const ItemRecette = styled.div`
     height: 40vh;
     @media(max-width: 768px){
         width: 80vw;
+        height: 20vh;
         
     }
     background-image:${props => `url("/images/${props.bgImage}")`}
@@ -62,19 +71,10 @@ const RecetteName = styled.div`
     padding-top: 5px;
     padding-left: 5px;
     text-align: left;
-    @media(max-width: 768px){
-        padding-top: 5px;
-        padding-left: 5px;
-        
-    }
+    
 `
 const RecetteUser = styled.div`
     text-align: left;
     padding-left: 5px;
-    @media(max-width: 768px){
-        text-align: left;
-        padding-left: 5px;
-        
-    }
     
 `

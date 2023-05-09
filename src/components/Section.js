@@ -8,7 +8,7 @@ const Section = () => {
     <Wrap>
         <ItemText>
             <h1> The Easiest Way <br />To Make Your <br />Favorite Meal</h1>
-            <p id="subtitle"className="text-6xl">Discover 1000+ recipes in your hand with the best recipe.<br />Help you to find the easiest way to cook.</p>
+            <p>Discover 1000+ recipes in your hand with the best recipe.<br />Help you to find the easiest way to cook.</p>
         </ItemText>
         <ButtonGroup>
             <LeftButton>
@@ -32,11 +32,36 @@ const Wrap = styled.div`
     display: flex;
     flex-direction: column;
     
+    
 `
 const ItemText = styled.div`
     padding-top: 25vh;
     text-align: left;
     padding-left: 15vh;
+
+    h1{
+        font-size: 4em;
+        font-weight: bold;
+        font-family: "Fantasy";
+    }
+
+    @media(max-width: 768px){
+        padding-top: 25vh;
+        padding-left: 8vh;
+        text-align: left;
+        h1{
+            font-size: 2.1em;
+            font-weight: bold;
+        }
+        p {
+            padding-top: 10px;
+            font-size: .98em;
+            font-weight: bold;
+            color: white;
+            font-family: "Monospace";
+        }
+    }
+   
     
 `
 const ButtonGroup = styled.div`

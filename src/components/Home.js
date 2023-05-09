@@ -4,14 +4,20 @@ import Section from './Section'
 import SectionBreakfast from './SectionBreakfast'
 
 import SeeAll from './SeeAll'
+//import Pubsection from './Pubsection'
 
-//<<Pubsection />/>
+/*
+  <SeeAll />  
+  <SectionBreakfast/>
+  <SectionBreakfast/>
+        <Pubsection />
+*/
 
 function Home() {
   return (
     <Container>
         <Section />
-        <SeeAll />  
+        <SeeAll />
         <SectionBreakfast/>
         
     </Container>
@@ -23,11 +29,12 @@ export default Home
 
 const Container = styled.div`
   height: 100vh;
-  display: flex;
   flex-direction: column;
+  
+
   @media(max-width: 768px){
-    display: flex;
     flex-direction: column;
+    
   }
   
 `

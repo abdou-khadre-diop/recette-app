@@ -1,13 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
 function Pubsection() {
   return (
     <Wrap>
-        <ItemPub>
-            <p>Les pubs nous permettent</p>
-        </ItemPub>
+        <p>Pubsection</p>
     </Wrap>
   )
 }
@@ -16,11 +13,16 @@ export default Pubsection
 
 const Wrap = styled.div`
     width: 100vw;
-    height: 50vh;
-    background: #2A5646;
+    height: 35vh;
+    background: blue;
+    
     display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 55px;
     flex-direction: column;
-`
-const ItemPub = styled.div`
-    color: yellow;
+    @media(max-width: 768px){
+        float: bottom;
+    }    
+
 `

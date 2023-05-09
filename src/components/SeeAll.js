@@ -36,20 +36,24 @@ function SeeAll() {
 }
 
 export default SeeAll
-
+// display
 const Wrap = styled.div`
     width: 100vw;
     height: 100vh;
-    background: rgb(247,247,247);
-    display: flex;
-    flex-direction: column;
+    background: red;
+    @media(max-width: 768px){
+      height: 180vh;
+    }
+    
+    
     
 `
 const ItemRecipesGroup = styled.div`
   display: flex;
-  @media (max-width: 768px){
+  @media(max-width: 768px){
     flex-direction: column;
-    
-    
+    justify-content: space-between;
+    padding-top: 5px;
   }
+  
 `
