@@ -35,6 +35,10 @@ const Wrap = styled.div`
     margin-left: 8vh;
     
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    
+    
     
 `
 const ItemRecette = styled.div`
@@ -45,17 +49,32 @@ const ItemRecette = styled.div`
     border-radius: 15px;
     width: 20vw;
     height: 40vh;
+    @media(max-width: 768px){
+        width: 80vw;
+        
+    }
     background-image:${props => `url("/images/${props.bgImage}")`}
     
+   
     
 `
 const RecetteName = styled.div`
     padding-top: 5px;
     padding-left: 5px;
     text-align: left;
+    @media(max-width: 768px){
+        padding-top: 5px;
+        padding-left: 5px;
+        
+    }
 `
 const RecetteUser = styled.div`
     text-align: left;
     padding-left: 5px;
+    @media(max-width: 768px){
+        text-align: left;
+        padding-left: 5px;
+        
+    }
     
 `

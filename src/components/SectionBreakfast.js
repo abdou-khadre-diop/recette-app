@@ -23,6 +23,12 @@ const Wrap = styled.div`
     height: 65vh;
     background: rgb(233,233,233);
     margin: auto;
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 55px;
+    flex-direction: column;
+    
 
 `
 const ItemDiv = styled.div`
@@ -32,4 +38,11 @@ const ItemDiv = styled.div`
     border-radius: 14px;
     margin-left: auto;
     margin-right: 8em;
+    @media(max-width: 768px){
+        width: 75vw;
+        margin-left: auto;
+        margin-right: 10em;
+        
+    }
+
 `

@@ -43,10 +43,13 @@ const Wrap = styled.div`
     background: rgb(247,247,247);
     display: flex;
     flex-direction: column;
+    
 `
 const ItemRecipesGroup = styled.div`
   display: flex;
   @media (max-width: 768px){
     flex-direction: column;
+    
+    
   }
 `

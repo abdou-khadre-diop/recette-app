@@ -77,7 +77,8 @@ const RightMenu = styled.div`
   }
 `
 const CustomMenu = styled(MenuIcon)`
-  cursor: pointer;  
+  cursor: pointer;
+       
 
 `
 const BurgerNav = styled.div`
@@ -109,6 +110,7 @@ const BurgerNav = styled.div`
 
 const CustomClose = styled(CloseIcon)`
   cursor: pointer;
+  color: black;
 `
 const CloseWrapper = styled.div`
   display: flex;
