@@ -13,7 +13,7 @@ export default Pubsection
 
 const Wrap = styled.div`
     width: 100vw;
-    height: 35vh;
+    height: 65vh;
     background: blue;
     
     display: flex;

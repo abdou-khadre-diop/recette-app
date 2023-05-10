@@ -4,7 +4,7 @@ import Section from './Section'
 import SectionBreakfast from './SectionBreakfast'
 
 import SeeAll from './SeeAll'
-//import Pubsection from './Pubsection'
+import CommunitySection from './CommunitySection'
 
 /*
   <SeeAll />  
@@ -19,7 +19,7 @@ function Home() {
         <Section />
         <SeeAll />
         <SectionBreakfast/>
-        
+        <CommunitySection />
     </Container>
     
   )

@@ -20,7 +20,7 @@ export default SectionBreakfast
 const Wrap = styled.div`
     width: 100vw;
     height: 55vh;
-    background: black;
+    background: rgba(236, 236, 236);
     
     display: flex;
     padding-top: 25px;
@@ -38,7 +38,7 @@ const Wrap = styled.div`
 const ItemDiv = styled.div`
     width: 30vw;
     height: 35vh;
-    background: yellow;
+    background: white;
     border-radius: 14px;
     margin-right: 8em;
     

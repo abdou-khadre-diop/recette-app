@@ -30,7 +30,7 @@ export default ItemRecipes
 const Recette = styled.div`
     width: 20vw;
     height: 52vh;
-    background: Orange;
+    background: rgba(236, 236, 236);
     margin-top: 10vh;
     margin-left: 8vh;
     

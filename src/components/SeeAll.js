@@ -40,7 +40,7 @@ export default SeeAll
 const Wrap = styled.div`
     width: 100vw;
     height: 100vh;
-    background: red;
+    background: white;
     @media(max-width: 768px){
       height: 180vh;
     }
