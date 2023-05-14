@@ -5,6 +5,7 @@ import SectionBreakfast from './SectionBreakfast'
 
 import SeeAll from './SeeAll'
 import CommunitySection from './CommunitySection'
+import Footer from './Footer'
 
 /*
   <SeeAll />  
@@ -20,6 +21,7 @@ function Home() {
         <SeeAll />
         <SectionBreakfast/>
         <CommunitySection />
+        <Footer />
     </Container>
     
   )
